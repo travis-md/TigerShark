@@ -1,4 +1,5 @@
 # Using AWS CloudFormation Template as basis of Dynamo DB Contacts Stack
+# https://aws.amazon.com/serverless/sam/
 
 AWSTemplateFormatVersion: '2010-09-09'
 Metadata:
@@ -52,5 +53,5 @@ Resources:
         WriteCapacityUnits: !Ref 'WriteCapacityUnits'
 Outputs:
   TableName:
-    Value: !Ref 'myDynamoDBTable'
+    Value: !Ref 'ContactsDynamoDBTable'
 Description: Table name of the newly created DynamoDB table
